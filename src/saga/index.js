@@ -7,6 +7,9 @@ import configureStore from './store';
 
 ReactDOM.render(
   <Provider store={configureStore()}>
-    <App />
+    <div>
+      <h2>Lifegame Redux - redux-saga</h2>
+      <App />
+    </div>
   </Provider>,
 document.getElementById('container'));

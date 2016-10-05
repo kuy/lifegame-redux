@@ -8,7 +8,7 @@ import configureStore from './store';
 ReactDOM.render(
   <Provider store={configureStore()}>
     <div>
-      <h2>Lifegame Redux - redux-logic (Vanilla)</h2>
+      <h2>Lifegame Redux - redux-logic (RxJS)</h2>
       <App />
     </div>
   </Provider>,
