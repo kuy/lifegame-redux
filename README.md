@@ -23,6 +23,11 @@ $ npm start
 
 Open `http://localhost:8080` in your browser.
 
+## Contributing
+
+Are you using redux-xxx middleware heavily?
+Please send PRs or open issues to improve a quality of the code.
+
 ## Author
 
 Yuki Kodama / [@kuy](https://twitter.com/kuy)
