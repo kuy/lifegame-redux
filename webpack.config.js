@@ -1,5 +1,7 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = {
   entry: {
     saga: './src/saga/index.js'
@@ -13,7 +15,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      common: './src/common'
+      common: path.join(__dirname, 'src', 'common')
     }
   },
   output: {

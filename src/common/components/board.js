@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Cell from './cell';
+import Cell from 'common/components/cell';
 
 function transform(data, size) {
   const [ cols, rows ] = size;

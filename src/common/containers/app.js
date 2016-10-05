@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Board from '../components/board';
-import { timeTick, timePlay, timePause } from '../actions';
+import Board from 'common/components/board';
+import { timeTick, timePlay, timePause } from 'common/actions';
 
 class App extends Component {
   handleTick() {

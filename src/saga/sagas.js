@@ -1,6 +1,6 @@
 import { eventChannel } from 'redux-saga';
 import { fork, take, put, cancel, cancelled } from 'redux-saga/effects';
-import { TIME_PLAY, TIME_PAUSE, timeTick } from './actions';
+import { TIME_PLAY, TIME_PAUSE, timeTick } from 'common/actions';
 
 function createTimer(msec) {
   return eventChannel(emit => {

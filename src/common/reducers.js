@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import {
   TIME_TICK, TIME_PLAY, TIME_PAUSE
-} from './actions';
-import { transit } from '../common/utils';
+} from 'common/actions';
+import { transit } from 'common/utils';
 
 const initial = {
   app: {
