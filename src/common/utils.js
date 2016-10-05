@@ -1,16 +1,5 @@
 // @flow
 
-export function createAmend(data) {
-  const len = data.length;
-  return i => {
-    if (0 <= i && i < len) {
-      return data[i];
-    } else {
-      return 0;
-    }
-  };
-}
-
 const UP    = 2 ** 0;
 const RIGHT = 2 ** 1;
 const DOWN  = 2 ** 2;
@@ -18,7 +7,7 @@ const LEFT  = 2 ** 3;
 
 export const DIRS = { UP, RIGHT, DOWN, LEFT };
 
-export function edge(size, i) {
+export function edge(size: number[], i: number): number {
   let ret = 0;
 
   const [ cols, rows ] = size;
@@ -45,7 +34,7 @@ export function edge(size, i) {
   return ret;
 }
 
-export function index(size, i, dir) {
+export function index(size: number[], i: number, dir: number): ?number {
   const dirs = edge(size, i);
   if ((dir & dirs) === 0) {
     const [ cols, rows ] = size;
@@ -62,15 +51,15 @@ export function index(size, i, dir) {
   }
 }
 
-export function get(data, size, i) {
+export function get(data: number[], size: number[], i: number): (dir: number) => number {
   return dir => {
     const [ cols, rows ] = size;
     const ii = index(size, i, dir);
-    return typeof ii === 'undefined' ? 0 : data[ii];
+    return !ii ? 0 : data[ii];
   };
 }
 
-export function single(data, size, i) {
+export function single(data: number[], size: number[], i: number) {
   const [ cols, rows ] = size;
   const getx = get(data, size, i);
   const x = getx(UP | LEFT) +   getx(UP) +   getx(UP | RIGHT) +
@@ -91,7 +80,7 @@ export function single(data, size, i) {
   }
 }
 
-export function transit(data, size) {
+export function transit(data: number[], size: number[]): number[] {
   const [ cols, rows ] = size;
   return data.map((s, i) => single(data, size, i));
 }
