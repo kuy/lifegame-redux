@@ -55,7 +55,7 @@ export function get(data: number[], size: number[], i: number): (dir: number) =>
   return dir => {
     const [ cols, rows ] = size;
     const ii = index(size, i, dir);
-    return !ii ? 0 : data[ii];
+    return typeof ii === 'number' ? data[ii] : 0;
   };
 }
 

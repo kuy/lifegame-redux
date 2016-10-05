@@ -4,21 +4,6 @@ import * as utils from '../../src/common/utils';
 describe('utils', () => {
   const { UP, RIGHT, DOWN, LEFT } = utils.DIRS;
 
-  describe('.createAmend', () => {
-    it('rounds number', () => {
-      const data = [1, 0, 1, 0, 1, 0, 1, 0, 1];
-      const amend = utils.createAmend(data);
-      assert(amend(-999) == 0);
-      assert(amend(-1) == 0);
-      assert(amend(0) == 1);
-      assert(amend(1) == 0);
-      assert(amend(4) == 1);
-      assert(amend(8) == 1);
-      assert(amend(9) == 0);
-      assert(amend(999) == 0);
-    });
-  });
-
   describe('.edge', () => {
     it('detects', () => {
       const size = [3, 3];
