@@ -4,7 +4,8 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    saga: './src/saga/index.js'
+    saga: './src/saga/index.js',
+    logic: './src/logic/index.js'
   },
   module: {
     loaders: [{
