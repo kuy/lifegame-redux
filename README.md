@@ -7,6 +7,10 @@ Conway's lifegame using Redux + various middlewares.
 + [redux-saga](https://github.com/yelouafi/redux-saga) - [saga](https://github.com/kuy/lifegame-redux/tree/master/src/saga): Saga written in generator/yield
 + [redux-logic](https://github.com/jeffbski/redux-logic) - [logic](https://github.com/kuy/lifegame-redux/tree/master/src/logic) Logic written in VanillaJS
 + [redux-logic](https://github.com/jeffbski/redux-logic) - [logic-rxjs](https://github.com/kuy/lifegame-redux/tree/master/src/logic-rxjs) Logic written in RxJS
++ [redux-logic](https://github.com/jeffbski/redux-logic) - logic-aa Logic written in Async/Await (*Comming Soon...*)
++ redux-observable - *Comming Soon...*
++ redux-loop - *Comming Soon...*
++ redux-effects - *Comming Soon...*
 
 ## Side Effects
 
