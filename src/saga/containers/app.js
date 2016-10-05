@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Board from '../components/board';
-import { timeTick } from '../actions';
+import { timeTick, timePlay, timePause } from '../actions';
 
 class App extends Component {
   handleTick() {
     this.props.dispatch(timeTick());
+  }
+
+  handlePlay() {
+    this.props.dispatch(timePlay());
+  }
+
+  handlePause() {
+    this.props.dispatch(timePause());
   }
 
   render() {
@@ -13,6 +21,8 @@ class App extends Component {
     return <div>
       <Board {...life} />
       <button onClick={this.handleTick.bind(this)}>Tick</button>
+      <button onClick={this.handlePlay.bind(this)}>Play</button>
+      <button onClick={this.handlePause.bind(this)}>Pause</button>
     </div>;
   }
 }
