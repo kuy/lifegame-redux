@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     saga: './src/saga/index.js',
     logic: './src/logic/index.js',
-    'logic-rxjs': './src/logic-rxjs/index.js'
+    'logic-rx': './src/logic-rx/index.js'
   },
   module: {
     loaders: [{
