@@ -1,5 +1,6 @@
 import { createLogic } from 'redux-logic';
 import { TIME_PLAY, TIME_PAUSE, timeTick } from 'common/actions';
+import { PERIOD } from 'common/constants';
 
 const timer = createLogic({
   type: TIME_PLAY,
@@ -7,7 +8,7 @@ const timer = createLogic({
   process({ cancelled$ }, dispatch) {
     const timer = setInterval(() => {
       dispatch(timeTick(), { allowMore: true });
-    }, 1000);
+    }, PERIOD);
 
     cancelled$.subscribe(() => {
       clearInterval(timer);

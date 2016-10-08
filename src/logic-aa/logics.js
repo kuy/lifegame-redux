@@ -1,6 +1,7 @@
 import Rx from 'rxjs';
 import { createLogic } from 'redux-logic';
 import { TIME_PLAY, TIME_PAUSE, timeTick } from 'common/actions';
+import { PERIOD } from 'common/constants';
 
 // Cancellable Promise-based periodic timer
 // This function returns a function (call it 'producer') that returns a Promise object.
@@ -46,7 +47,7 @@ const timer = createLogic({
       }
     }
 
-    runTimer(1000);
+    runTimer(PERIOD);
   }
 });
 

@@ -7,7 +7,8 @@ module.exports = {
     saga: './src/saga/index.js',
     logic: './src/logic/index.js',
     'logic-rx': './src/logic-rx/index.js',
-    'logic-aa': './src/logic-aa/index.js'
+    'logic-aa': './src/logic-aa/index.js',
+    observable: './src/observable/index.js'
   },
   module: {
     loaders: [{

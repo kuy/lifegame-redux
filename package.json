@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "redux-logic": "^0.9.3",
+    "redux-observable": "^0.12.1",
     "rxjs": "^5.0.0-beta.12"
   }
 }
