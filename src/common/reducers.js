@@ -51,6 +51,10 @@ function life(state = initial.life, action) {
   return handler(state, action);
 }
 
+export const selectors = {
+  time: state => state.app.time
+};
+
 export default combineReducers(
   { app, life }
 );

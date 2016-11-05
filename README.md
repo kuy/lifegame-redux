@@ -1,6 +1,6 @@
 # Lifegame Redux ⚡
 
-Conway's lifegame using Redux + various middlewares.
+Conway's lifegame using Redux + various middlewares for comparison.
 
 ## Middlewares
 
@@ -9,6 +9,7 @@ Conway's lifegame using Redux + various middlewares.
 + [redux-logic](https://github.com/jeffbski/redux-logic) - [logic-rx](https://github.com/kuy/lifegame-redux/tree/master/src/logic-rx): Logic written in [RxJS](https://github.com/ReactiveX/rxjs)
 + [redux-logic](https://github.com/jeffbski/redux-logic) - [logic-aa](https://github.com/kuy/lifegame-redux/tree/master/src/logic-aa): Logic written in async/await
 + [redux-observable](https://github.com/redux-observable/redux-observable) - [observable](https://github.com/kuy/lifegame-redux/tree/master/src/observable): Observable written in [RxJS](https://github.com/ReactiveX/rxjs)
++ [redux-ship](https://github.com/clarus/redux-ship) - [ship](https://github.com/kuy/lifegame-redux/tree/master/src/ship): Controller written in Generators, Effect runner written in async/await
 + redux-effects - *Comming Soon...*
 + redux-loop - *Comming Soon...*
 

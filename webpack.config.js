@@ -8,7 +8,8 @@ module.exports = {
     logic: './src/logic/index.js',
     'logic-rx': './src/logic-rx/index.js',
     'logic-aa': './src/logic-aa/index.js',
-    observable: './src/observable/index.js'
+    observable: './src/observable/index.js',
+    ship: './src/ship/index.js'
   },
   module: {
     loaders: [{

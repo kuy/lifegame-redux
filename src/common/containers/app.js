@@ -31,4 +31,8 @@ function select({ app, life }) {
   return { app, life };
 }
 
-export default connect(select)(App);
+function dispatch(_, { dispatch }) {
+  return { dispatch };
+}
+
+export default connect(select, dispatch)(App);
